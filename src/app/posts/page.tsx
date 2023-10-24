@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -27,20 +25,15 @@ export const load = async () => {
 	return { posts: sortedPosts };
 };
 
-export default async function Home() {
+export default async function Post() {
 	const data = await load();
 	return (
-		<main>
-			<p>
-				I’m a full stack developer. I code in TypeScript, Rust, C#, and Python.
-				I have a passion for open source and Linux.
-			</p>
-			<h2>Posts</h2>
+		<>
 			{data.posts.map((post) => (
-				<Link key={post?.id} href={"/posts/" + post?.id}>
+				<a key={post?.id} href={"/posts/" + post?.id}>
 					<article>{post?.title}</article>
-				</Link>
+				</a>
 			))}
-		</main>
+		</>
 	);
 }
