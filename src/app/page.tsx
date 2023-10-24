@@ -4,7 +4,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-export const load = async () => {
+const load = async () => {
 	const postsDir = path.join(process.cwd(), "src/app/posts");
 	const posts = (
 		await Promise.all(

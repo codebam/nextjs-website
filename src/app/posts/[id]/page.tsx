@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
 
-export async function getPostData(id: string) {
+async function getPostData(id: string) {
 	const fullPath = path.join("src/app/posts/", `${id}.md`);
 	const fileContents = fs.readFileSync(fullPath, "utf8");
 
@@ -20,6 +20,8 @@ export async function getPostData(id: string) {
 	// Combine the data with the id and contentHtml
 	return {
 		id,
+		title: undefined,
+		date: new Date(),
 		contentHtml,
 		...matterResult.data,
 	};
