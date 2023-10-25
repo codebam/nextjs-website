@@ -35,7 +35,13 @@ header {
   text-align: center;
 }
 
-header > * {
+header > div {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+header > * > * {
   font-size: 1.2em;
   margin: 1em;
 }
