@@ -3,6 +3,10 @@ import Button from "react-bootstrap/Button";
 
 const HeaderBar = () => (
 	<header>
+		<img
+			alt="profile"
+			src="https://avatars.githubusercontent.com/u/6035884?v=4"
+		/>
 		<Link href="/">
 			<h1>Sean Behan</h1>
 		</Link>
