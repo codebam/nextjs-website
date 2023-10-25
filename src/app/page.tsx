@@ -41,6 +41,9 @@ export default async function Home() {
 					<article>{post?.title}</article>
 				</Link>
 			))}
+			<a rel="me" style={{ display: "none" }} href="https://mstdn.ca/@codebam">
+				Mastodon
+			</a>
 		</main>
 	);
 }
