@@ -10,7 +10,7 @@ const load = async () => {
 		.use(html)
 		.process(matterResult.content);
 	const contentHtml = processedContent.toString();
-	return { contentHtml, ...matterResult.data };
+	return { title: undefined, contentHtml, ...matterResult.data };
 };
 
 export default async function Resume() {
