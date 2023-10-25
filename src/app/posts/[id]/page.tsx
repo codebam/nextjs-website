@@ -17,7 +17,6 @@ const load = async () => {
 			fs.readdirSync(postsDir).map(async (fileName) => {
 				const id = fileName.replace(/\.md$/, "");
 				const fullPath = path.join(postsDir, fileName);
-				console.log(fullPath);
 				if (fullPath.split(".").pop() === "md") {
 					const contents = fs.readFileSync(fullPath, "utf8");
 					const matterResult = matter(contents);

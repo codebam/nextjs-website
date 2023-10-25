@@ -15,7 +15,6 @@ const load = async () => {
 
 export default async function Resume() {
 	const data = await load();
-	console.log(data);
 	return (
 		<main>
 			<h1>{data.title}</h1>

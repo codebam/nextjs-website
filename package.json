@@ -13,6 +13,7 @@
     "pages:dev": "npx wrangler pages dev .vercel/output/static --compatibility-date=2023-10-16 --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.23.2",
     "@types/node": "20.8.8",
     "@types/react": "18.2.31",
     "@types/react-dom": "18.2.14",
