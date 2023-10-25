@@ -47,12 +47,13 @@ export async function GET() {
 	});
 	data.posts.map((post) => {
 		feed.item({
-			title: post?.title,
+			title: post?.title ?? "",
 			guid: post?.id,
 			url: `https://seanbehan.ca/posts/${post?.id}`,
-			date: post?.date,
+			date: post?.date ?? new Date(),
 			author: "Sean Behan",
 			categories: post?.tags,
+			description: "",
 		});
 	});
 	return new Response(feed.xml(), {
