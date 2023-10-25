@@ -51,3 +51,7 @@ h2 {
 p, article, footer {
   margin: 1em;
 }
+
+a {
+  text-decoration: underline;
+}
