@@ -38,6 +38,7 @@ header {
 header > div {
   display: flex;
   flex-wrap: wrap;
+  margin: 1em;
 
 }
 
