@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import Link from "next/link";
-import Head from "next/head";
 import HeaderBar from "@/components/headerbar";
 import Script from "next/script";
 
@@ -20,9 +19,6 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<Head>
-				<meta name="google-adsense-account" content="ca-pub-3287237463323384" />
-			</Head>
 			<Script
 				async
 				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287237463323384"

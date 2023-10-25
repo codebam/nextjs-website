@@ -3,7 +3,18 @@ import html from "remark-html";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
-import Head from "next/head";
+import type { Metadata, ResolvingMetadata } from "next";
+
+export async function generateMetadata(
+	{ params }: { params: { id: string } },
+	parent: ResolvingMetadata
+): Promise<Metadata> {
+	const id = params.id;
+	const postData = await preload(params.id);
+	return {
+		title: postData.title,
+	};
+}
 
 export async function generateStaticParams() {
 	const data = await load();
@@ -59,13 +70,10 @@ const preload = async (id: string) => {
 export default async function Post({ params }: { params: { id: string } }) {
 	const postData = await preload(params.id);
 	return (
-		<>
-			<Head>
-				<title>{postData.title}</title>
-			</Head>
+		<main>
 			<h1>{postData.title}</h1>
 			<h3>{postData.date.toString()}</h3>
 			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-		</>
+		</main>
 	);
 }

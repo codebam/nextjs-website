@@ -2,6 +2,18 @@ import fs from "fs";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { Metadata, ResolvingMetadata } from "next";
+
+export async function generateMetadata(
+	{ params }: { params: { id: string } },
+	parent: ResolvingMetadata
+): Promise<Metadata> {
+	const id = params.id;
+	const data = await load();
+	return {
+		title: data.title,
+	};
+}
 
 const load = async () => {
 	const contents = fs.readFileSync("src/app/resume/resume.md", "utf8");
