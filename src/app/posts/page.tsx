@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Link from "next/link";
 
 const load = async () => {
 	const postsDir = path.join(process.cwd(), "src/app/posts");
@@ -27,12 +28,14 @@ const load = async () => {
 export default async function Post() {
 	const data = await load();
 	return (
-		<>
+		<ul>
 			{data.posts.map((post) => (
-				<a key={post?.id} href={"/posts/" + post?.id}>
-					<article>{post?.title}</article>
-				</a>
+				<li key={post?.id}>
+					<Link href={"/posts/" + post?.id}>
+						<article>{post?.title}</article>
+					</Link>
+				</li>
 			))}
-		</>
+		</ul>
 	);
 }

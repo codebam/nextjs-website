@@ -35,11 +35,15 @@ export default async function Home() {
 				I have a passion for open source and Linux.
 			</p>
 			<h2>Posts</h2>
-			{data.posts.map((post) => (
-				<Link key={post?.id} href={"/posts/" + post?.id}>
-					<article>{post?.title}</article>
-				</Link>
-			))}
+			<ul>
+				{data.posts.map((post) => (
+					<li key={post?.id}>
+						<Link href={"/posts/" + post?.id}>
+							<article>{post?.title}</article>
+						</Link>
+					</li>
+				))}
+			</ul>
 			<a rel="me" style={{ display: "none" }} href="https://mstdn.ca/@codebam">
 				Mastodon
 			</a>
