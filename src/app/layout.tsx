@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Head from "next/head";
 import HeaderBar from "@/components/headerbar";
+import Script from "next/script";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +22,11 @@ export default function RootLayout({
 		<html lang="en">
 			<Head>
 				<meta name="google-adsense-account" content="ca-pub-3287237463323384" />
-				<script
-					async
-					src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287237463323384"
-				></script>
 			</Head>
+			<Script
+				async
+				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287237463323384"
+			/>
 			<body>
 				<HeaderBar />
 				{children}

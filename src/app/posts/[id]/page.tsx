@@ -3,6 +3,7 @@ import html from "remark-html";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
+import Head from "next/head";
 
 export async function generateStaticParams() {
 	const data = await load();
@@ -59,6 +60,9 @@ export default async function Post({ params }: { params: { id: string } }) {
 	const postData = await preload(params.id);
 	return (
 		<>
+			<Head>
+				<title>{postData.title}</title>
+			</Head>
 			<h1>{postData.title}</h1>
 			<h3>{postData.date.toString()}</h3>
 			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
