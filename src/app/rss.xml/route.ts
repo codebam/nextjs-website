@@ -1,5 +1,3 @@
-import { remark } from "remark";
-import html from "remark-html";
 import path from "path";
 import fs from "fs";
 import matter from "gray-matter";
