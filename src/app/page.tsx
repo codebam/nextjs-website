@@ -14,7 +14,12 @@ const load = async () => {
 				if (fullPath.split(".").pop() === "md") {
 					const contents = fs.readFileSync(fullPath, "utf8");
 					const matterResult = matter(contents);
-					return { id, title: undefined, ...matterResult.data };
+					return {
+						id,
+						date: undefined,
+						title: undefined,
+						...matterResult.data,
+					};
 				}
 			})
 		)
@@ -41,6 +46,8 @@ export default async function Home() {
 						<Link href={"/posts/" + post?.id}>
 							<article>{post?.title}</article>
 						</Link>
+						{/* @ts-ignore */}
+						<p>{post.date.toISOString()}</p>
 					</li>
 				))}
 			</ul>

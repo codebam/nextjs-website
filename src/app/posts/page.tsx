@@ -34,6 +34,8 @@ export default async function Post() {
 					<Link href={"/posts/" + post?.id}>
 						<article>{post?.title}</article>
 					</Link>
+					{/* @ts-ignore */}
+					<p>{post.date.toISOString()}</p>
 				</li>
 			))}
 		</ul>
