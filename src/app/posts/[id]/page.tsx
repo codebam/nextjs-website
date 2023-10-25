@@ -60,7 +60,7 @@ export default async function Post({ params }: { params: { id: string } }) {
 	return (
 		<>
 			<h1>{postData.title}</h1>
-			<h2>{postData.date.toString()}</h2>
+			<h3>{postData.date.toString()}</h3>
 			<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 		</>
 	);
