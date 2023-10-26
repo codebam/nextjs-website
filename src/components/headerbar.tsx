@@ -1,5 +1,5 @@
 "use client";
-import { Link, Image } from "@nextui-org/react";
+import { Link, Image, Divider } from "@nextui-org/react";
 
 const HeaderBar = () => (
 	<header>
@@ -11,7 +11,7 @@ const HeaderBar = () => (
 				width={100}
 			/>
 		</Link>
-		<Link underline="always" href="/">
+		<Link className="ml-0" underline="always" href="/">
 			<h1>Sean Behan</h1>
 		</Link>
 		<div>
