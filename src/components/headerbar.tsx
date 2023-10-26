@@ -1,5 +1,5 @@
 "use client";
-import { Link, Image, Divider } from "@nextui-org/react";
+import { Link, Image } from "@nextui-org/react";
 
 const HeaderBar = () => (
 	<header>
