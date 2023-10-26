@@ -7,16 +7,6 @@
   margin: auto;
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-header > div {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 h1 {
   font-size: 2em;
 }

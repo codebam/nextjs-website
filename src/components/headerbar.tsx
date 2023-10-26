@@ -2,7 +2,7 @@
 import { Link, Image } from "@nextui-org/react";
 
 const HeaderBar = () => (
-	<header>
+	<header className="flex flex-wrap">
 		<Link href="/" className="m-4">
 			<Image
 				className="m-2"
@@ -16,7 +16,7 @@ const HeaderBar = () => (
 		<Link className="ml-0" underline="always" href="/">
 			<h1>Sean Behan</h1>
 		</Link>
-		<div>
+		<div className="flex flex-wrap">
 			<Link className="m-2 ml-4" underline="always" href="/posts">
 				Posts
 			</Link>
