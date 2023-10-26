@@ -37,6 +37,6 @@
     "@cloudflare/next-on-pages": "^1.7.2",
     "@types/rss": "^0.0.31",
     "eslint-plugin-next-on-pages": "^1.7.2",
-    "vercel": "^32.3.0"
+    "vercel": "^32.5.0"
   }
 }
