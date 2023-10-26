@@ -2,7 +2,6 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Image from "next/image";
 
 const load = async () => {
 	const postsDir = path.join(process.cwd(), "src/app/posts");
