@@ -18,8 +18,8 @@ const HeaderBar = () => (
 			<Link underline="always" href="/posts">
 				Posts
 			</Link>
-			<Link underline="always" href="/resume">
-				Resume
+			<Link underline="always" href="https://github.com/codebam">
+				GitHub
 			</Link>
 			<Link underline="always" href="/contact">
 				Contact
