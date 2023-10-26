@@ -21,17 +21,19 @@ const HeaderBar = () => {
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
 				/>
-				<NavbarBrand>
-					<Image
-						className="m-2"
-						isBlurred
-						alt="profile"
-						src="https://avatars.githubusercontent.com/u/6035884?v=4"
-						width={"50px"}
-						height={"50px"}
-					/>
-					<p className="font-bold text-inherit">Sean Behan</p>
-				</NavbarBrand>
+				<Link href="/">
+					<NavbarBrand>
+						<Image
+							className="m-2"
+							isBlurred
+							alt="profile"
+							src="https://avatars.githubusercontent.com/u/6035884?v=4"
+							width={"50px"}
+							height={"50px"}
+						/>
+						<h1 className="text-lg font-bold text-inherit">Sean Behan</h1>
+					</NavbarBrand>
+				</Link>
 			</NavbarContent>
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
