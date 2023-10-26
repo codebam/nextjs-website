@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeaderBar from "@/components/headerbar";
 import Script from "next/script";
+import { Providers } from "./providers";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -24,11 +25,13 @@ export default function RootLayout({
 				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287237463323384"
 			/>
 			<body>
-				<HeaderBar />
-				{children}
-				<footer>
-					<Link href="https://github.com/codebam">source code</Link>
-				</footer>
+				<Providers>
+					<HeaderBar />
+					{children}
+					<footer>
+						<Link href="https://github.com/codebam">source code</Link>
+					</footer>
+				</Providers>
 			</body>
 		</html>
 	);

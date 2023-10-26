@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "react-bootstrap/Button";
+import { Button } from "@nextui-org/button";
 
 const HeaderBar = () => (
 	<header>
@@ -11,12 +11,24 @@ const HeaderBar = () => (
 			<h1>Sean Behan</h1>
 		</Link>
 		<div>
-			<Button href="/posts">Posts</Button>
-			<Button href="/resume">Resume</Button>
-			<Button href="/contact">Contact</Button>
-			<Button href="https://github.com/codebam">GitHub</Button>
-			<Button href="https://p.seanbehan.ca">Pastebin</Button>
-			<Button href="https://term.seanbehan.ca">Terminal</Button>
+			<Link href="/posts">
+				<Button>Posts</Button>
+			</Link>
+			<Link href="/resume">
+				<Button>Resume</Button>
+			</Link>
+			<Link href="/contact">
+				<Button>Contact</Button>
+			</Link>
+			<Link href="https://github.com/codebam">
+				<Button>GitHub</Button>
+			</Link>
+			<Link href="https://p.seanbehan.ca">
+				<Button>Pastebin</Button>
+			</Link>
+			<Link href="https://term.seanbehan.ca">
+				<Button>Terminal</Button>
+			</Link>
 		</div>
 	</header>
 );
