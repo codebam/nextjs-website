@@ -41,8 +41,7 @@ header > div {
 
 }
 
-header > img {
-  width: 100px;
+header > * > img {
   margin-top: 1.5em;
   margin-left: 1.5em;
 }
