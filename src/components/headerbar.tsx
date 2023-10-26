@@ -1,13 +1,14 @@
 "use client";
-import { Link } from "@nextui-org/react";
+import { Link, Image } from "@nextui-org/react";
 
 const HeaderBar = () => (
 	<header>
 		<Link href="/">
-			<img
+			<Image
+				isBlurred
 				alt="profile"
 				src="https://avatars.githubusercontent.com/u/6035884?v=4"
-				width="100px"
+				width={100}
 			/>
 		</Link>
 		<Link underline="always" href="/">
