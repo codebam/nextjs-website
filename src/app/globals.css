@@ -24,7 +24,7 @@
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  max-width: 50em;
+  max-width: 55em;
   margin: auto;
 }
 
