@@ -8,7 +8,7 @@ const HeaderBar = () => (
 				isBlurred
 				alt="profile"
 				src="https://avatars.githubusercontent.com/u/6035884?v=4"
-				width={100}
+				width={"100px"}
 			/>
 		</Link>
 		<Link className="ml-0" underline="always" href="/">
