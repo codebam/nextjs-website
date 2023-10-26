@@ -41,12 +41,19 @@ export default async function Home() {
 			<h2>Posts</h2>
 			<ul>
 				{data.posts.map((post) => (
-					<li key={post?.id}>
+					<li key={post?.id} style={{ marginBottom: "1em" }}>
 						<Link href={"/posts/" + post?.id}>
-							<article>{post?.title}</article>
+							<article style={{ display: "inline" }}>{post?.title}</article>
 						</Link>
-						{/* @ts-ignore */}
-						<p>{post.date.toISOString()}</p>
+						<p
+							style={{
+								color: "grey",
+								textAlign: "right",
+							}}
+						>
+							{/* @ts-ignore */}
+							{post.date.toDateString()}
+						</p>
 					</li>
 				))}
 			</ul>
