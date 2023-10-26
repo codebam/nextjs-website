@@ -24,7 +24,8 @@
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  max-width: 800px;
+  max-width: 50em;
+  margin: auto;
 }
 
 header {
