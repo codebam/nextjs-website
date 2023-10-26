@@ -17,15 +17,6 @@ header > div {
   flex-wrap: wrap;
 }
 
-header > * {
-  margin-top: 1.5em;
-  margin-left: 1.5em;
-}
-
-header > * > * {
-  margin: 0.5em;
-}
-
 h1 {
   font-size: 2em;
 }

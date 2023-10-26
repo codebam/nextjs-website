@@ -3,8 +3,9 @@ import { Link, Image } from "@nextui-org/react";
 
 const HeaderBar = () => (
 	<header>
-		<Link href="/">
+		<Link href="/" className="m-4">
 			<Image
+				className="m-2"
 				isBlurred
 				alt="profile"
 				src="https://avatars.githubusercontent.com/u/6035884?v=4"
@@ -16,19 +17,23 @@ const HeaderBar = () => (
 			<h1>Sean Behan</h1>
 		</Link>
 		<div>
-			<Link underline="always" href="/posts">
+			<Link className="m-2 ml-4" underline="always" href="/posts">
 				Posts
 			</Link>
-			<Link underline="always" href="https://github.com/codebam">
+			<Link
+				className="m-2"
+				underline="always"
+				href="https://github.com/codebam"
+			>
 				GitHub
 			</Link>
-			<Link underline="always" href="/contact">
+			<Link className="m-2" underline="always" href="/contact">
 				Contact
 			</Link>
-			<Link underline="always" href="https://p.seanbehan.ca">
+			<Link className="m-2" underline="always" href="https://p.seanbehan.ca">
 				Pastebin
 			</Link>
-			<Link underline="always" href="https://term.seanbehan.ca">
+			<Link className="m-2" underline="always" href="https://term.seanbehan.ca">
 				Terminal
 			</Link>
 		</div>
