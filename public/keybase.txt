@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/codebam
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://seanbehan.ca
+  * I am codebam (https://keybase.io/codebam) on keybase.
+  * I have a public key with fingerprint 24C5 21A3 F3E1 1560 DAB6  188D F9BC 985B 3BF9 72C7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01165b5de212a0cf2c597199e7f3d0c2aafccfae298496f6d67b3233892721213bf20a",
+      "fingerprint": "24c521a3f3e11560dab6188df9bc985b3bf972c7",
+      "host": "keybase.io",
+      "key_id": "f9bc985b3bf972c7",
+      "kid": "01165b5de212a0cf2c597199e7f3d0c2aafccfae298496f6d67b3233892721213bf20a",
+      "uid": "a311f51b1008c7da7c2b598dab139c19",
+      "username": "codebam"
+    },
+    "merkle_root": {
+      "ctime": 1653598192,
+      "hash_meta": "4a1a6957ef5995e1137df9b99995f060413a9fcc61bda47e5ccc8705e07feb4b",
+      "seqno": 22561953
+    },
+    "revoke": {
+      "sig_ids": [
+        "fa5d09fbea04efba050c729cc8a88d417e858f689104cfcc9c09b75b268bfbe20f"
+      ]
+    },
+    "service": {
+      "hostname": "seanbehan.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1653598200,
+  "expire_in": 157680000,
+  "prev": "e538ccd75600ee8e602dff913bb71af016e7565e486d8864d1569a955b21824a",
+  "seqno": 58,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owJ4nK1Tv2sUQRS+xEQwEBCJh4WKWSxDmJnd+XU2wTKF/0CQc368yS2X2z13N78I
+qWxsRAUJgiZNTCVYikUQQcRCDIJFQESwESVY2ZjOt0dEBEu3GfbN9733ve+9uTN+
+rDHWPNy9P3fpsHg99OabbdjbX4+vRTb3q1FrLerC4IAFD2XV7qY+akWEUsEt98Ao
+M8QF5riWVGuQIfbEMWOCc8EA0yrRIggvpI1ZHCvNJFJobAMjJpqKQprNQ9Ev0qzC
+tCxxnFEThxgo5YJ4YwVVygdtnVbcIk1L5iQSO3lZM1CcNSVMpznG8Kc9kPcP/H/W
+vThIZ2JKA6eWEqKc9EY6ZrlWKJvG2lFdA0soMtMDRLvcgzW9aH0q6kHRXYB2kedV
+7a2r0hqB2mKkU82wP1N22j2oDBITQ43QXELgWnO0Jpa1JRo/HoggCY2NRuGCWm8S
+Cdw5pyThQGQAm1iUUcL1LI9ajHFBNY9RQgFLeRfq6mU6j7aVUWsuCob7F8tEBwuG
+JBCsIZw4yTQmNDiIhEpQXAWhNCWJw5raEW0lt0woiyxGQnR1va5XLKVukL6e1JED
+JZjMQsdk0642sV/kVe7yBbzpVFW/bNXWVKv9GroMtn2UpG3TzOOeIGMJijLNM7QK
+kX+7xgiZimClnxbQTmsEl0IRUkf72CumBB4r57zExSIACgRhPgSNQ7WSmkCoALzj
+kCjhlRKJxxXURnNsjiqWmD82coU6zXzdUTqfmWqxgGh97ObiSKM51jjXnBy5+Gpy
++8fn09c+PD1z6/fTGh2u31Vj7MTJ35GZ2aHG4wP9kxZ0Z+Lts717n049HB/9cv7l
+xmZzYmV48/nBzruhxvbdBzfyrY9nV7aqJ8OzM/n7sLvx/cLlqtHbf3Rlf2/kFxxt
+L94=
+=rGGV
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/codebam
+
+==================================================================
