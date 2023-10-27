@@ -24,14 +24,13 @@ const HeaderBar = () => {
 				<Link href="/">
 					<NavbarBrand>
 						<Image
-							className="m-2"
 							isBlurred
 							alt="profile"
 							src="https://avatars.githubusercontent.com/u/6035884?v=4"
 							width={"50px"}
 							height={"50px"}
 						/>
-						<h1 className="text-lg font-bold text-inherit">Sean Behan</h1>
+						<h1 className="text-lg font-bold ml-4">Sean Behan</h1>
 					</NavbarBrand>
 				</Link>
 			</NavbarContent>

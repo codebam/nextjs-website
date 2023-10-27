@@ -19,10 +19,6 @@ h3 {
   font-size: 1.2em;
 }
 
-h1, h2, h3, p, article, code, footer {
-  margin: 1em;
-}
-
 a {
   text-decoration: underline;
 }

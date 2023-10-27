@@ -34,23 +34,16 @@ export default async function Home() {
 	const data = await load();
 	return (
 		<main>
-			<p>
+			<p className="my-8">
 				I’m a full stack developer. I code in TypeScript, Rust, C#, and Python.
 				I have a passion for open source and Linux.
 			</p>
 			<h2>Posts</h2>
 			<ul>
 				{data.posts.map((post) => (
-					<li key={post?.id} style={{ marginBottom: "1em" }}>
-						<Link href={"/posts/" + post?.id}>
-							<article style={{ display: "inline" }}>{post?.title}</article>
-						</Link>
-						<p
-							style={{
-								color: "grey",
-								textAlign: "right",
-							}}
-						>
+					<li key={post?.id}>
+						<Link href={"/posts/" + post?.id}>{post?.title}</Link>
+						<p className={"text-gray-600 text-right"}>
 							{/* @ts-ignore */}
 							{post.date.toDateString()}
 						</p>

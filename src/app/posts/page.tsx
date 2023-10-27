@@ -28,23 +28,19 @@ const load = async () => {
 export default async function Post() {
 	const data = await load();
 	return (
-		<ul>
-			{data.posts.map((post) => (
-				<li key={post?.id} style={{ marginBottom: "1em" }}>
-					<Link href={"/posts/" + post?.id}>
-						<article style={{ display: "inline" }}>{post?.title}</article>
-					</Link>
-					<p
-						style={{
-							color: "grey",
-							textAlign: "right",
-						}}
-					>
-						{/* @ts-ignore */}
-						{post.date.toDateString()}
-					</p>
-				</li>
-			))}
-		</ul>
+		<>
+			<h2>Posts</h2>
+			<ul>
+				{data.posts.map((post) => (
+					<li key={post?.id}>
+						<Link href={"/posts/" + post?.id}>{post?.title}</Link>
+						<p className={"text-gray-600 text-right"}>
+							{/* @ts-ignore */}
+							{post.date.toDateString()}
+						</p>
+					</li>
+				))}
+			</ul>
+		</>
 	);
 }
