@@ -21,7 +21,7 @@ const HeaderBar = () => {
 					aria-label={isMenuOpen ? "Close menu" : "Open menu"}
 					className="sm:hidden"
 				/>
-				<Link href="/">
+				<Link underline={"always"} href="/">
 					<NavbarBrand>
 						<Image
 							isBlurred
@@ -37,31 +37,55 @@ const HeaderBar = () => {
 
 			<NavbarContent className="hidden sm:flex gap-4" justify="center">
 				<NavbarItem>
-					<Link href="/">Home</Link>
+					<Link underline={"always"} href="/">
+						Home
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link href="/posts">Posts</Link>
+					<Link underline={"always"} href="/posts">
+						Posts
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link href="https://github.com/codebam">GitHub</Link>
+					<Link underline={"always"} href="https://github.com/codebam">
+						GitHub
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link href="/contact">Contact</Link>
+					<Link underline={"always"} href="/contact">
+						Contact
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link href="https://p.seanbehan.ca">Pastebin</Link>
+					<Link underline={"always"} href="https://p.seanbehan.ca">
+						Pastebin
+					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Link href="https://term.seanbehan.ca">Terminal</Link>
+					<Link underline={"always"} href="https://term.seanbehan.ca">
+						Terminal
+					</Link>
 				</NavbarItem>
 			</NavbarContent>
 			<NavbarContent justify="end"></NavbarContent>
 			<NavbarMenu>
 				<NavbarMenuItem>
-					<Link color={"primary"} className="w-full" href="/" size="lg">
+					<Link
+						underline={"always"}
+						color={"primary"}
+						className="w-full"
+						href="/"
+						size="lg"
+					>
 						Home
 					</Link>
-					<Link color={"primary"} className="w-full" href="/posts" size="lg">
+					<Link
+						underline={"always"}
+						color={"primary"}
+						className="w-full"
+						href="/posts"
+						size="lg"
+					>
 						Posts
 					</Link>
 					<Link
@@ -72,10 +96,17 @@ const HeaderBar = () => {
 					>
 						GitHub
 					</Link>
-					<Link color={"primary"} className="w-full" href="/contact" size="lg">
+					<Link
+						underline={"always"}
+						color={"primary"}
+						className="w-full"
+						href="/contact"
+						size="lg"
+					>
 						Contact
 					</Link>
 					<Link
+						underline={"always"}
 						color={"primary"}
 						className="w-full"
 						href="https://p.seanbehan.ca"
@@ -84,6 +115,7 @@ const HeaderBar = () => {
 						Pastebin
 					</Link>
 					<Link
+						underline={"always"}
 						color={"primary"}
 						className="w-full"
 						href="https://term.seanbehan.ca"
