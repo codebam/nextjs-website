@@ -89,6 +89,7 @@ const HeaderBar = () => {
 						Posts
 					</Link>
 					<Link
+						underline={"always"}
 						color={"primary"}
 						className="w-full"
 						href="https://github.com/codebam"
