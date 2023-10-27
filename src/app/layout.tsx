@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import { Inter } from "next/font/google";
 import Link from "next/link";
 import HeaderBar from "@/components/headerbar";
+import MyFooter from "@/components/myfooter";
 import Script from "next/script";
 import { Providers } from "./providers";
 
@@ -28,9 +29,7 @@ export default function RootLayout({
 				<Providers>
 					<HeaderBar />
 					{children}
-					<footer className="text-primary">
-						<Link href="https://github.com/codebam">source code</Link>
-					</footer>
+					<MyFooter />
 				</Providers>
 			</body>
 		</html>
