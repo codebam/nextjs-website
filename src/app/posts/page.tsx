@@ -34,7 +34,7 @@ export default async function Post() {
 				{data.posts.map((post) => (
 					<li key={post?.id}>
 						<Link href={"/posts/" + post?.id}>{post?.title}</Link>
-						<p className={"text-gray-600 text-right"}>
+						<p className={"text-secondary text-right"}>
 							{/* @ts-ignore */}
 							{post.date.toDateString()}
 						</p>
