@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Link from "next/link";
+import PostItem from "@/components/postitem";
 
 const load = async () => {
 	const postsDir = path.join(process.cwd(), "src/app/posts");
@@ -13,7 +13,12 @@ const load = async () => {
 				if (fullPath.split(".").pop() === "md") {
 					const contents = fs.readFileSync(fullPath, "utf8");
 					const matterResult = matter(contents);
-					return { id, title: undefined, ...matterResult.data };
+					return {
+						id,
+						date: undefined,
+						title: undefined,
+						...matterResult.data,
+					};
 				}
 			})
 		)
@@ -32,13 +37,7 @@ export default async function Post() {
 			<h2>Posts</h2>
 			<ul>
 				{data.posts.map((post) => (
-					<li key={post?.id}>
-						<Link href={"/posts/" + post?.id}>{post?.title}</Link>
-						<p className={"text-secondary text-right"}>
-							{/* @ts-ignore */}
-							{post.date.toDateString()}
-						</p>
-					</li>
+					<PostItem post={post} key={post?.id} />
 				))}
 			</ul>
 		</>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import PostItem from "@/components/postitem";
 
 const load = async () => {
 	const postsDir = path.join(process.cwd(), "src/app/posts");
@@ -41,15 +42,7 @@ export default async function Home() {
 			<h2>Posts</h2>
 			<ul>
 				{data.posts.map((post) => (
-					<li key={post?.id}>
-						<Link className={"text-primary"} href={"/posts/" + post?.id}>
-							{post?.title}
-						</Link>
-						<p className={"text-secondary text-right"}>
-							{/* @ts-ignore */}
-							{post.date.toDateString()}
-						</p>
-					</li>
+					<PostItem post={post} key={post?.id} />
 				))}
 			</ul>
 			<a rel="me" style={{ display: "none" }} href="https://mstdn.ca/@codebam">
