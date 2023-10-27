@@ -21,7 +21,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<Script
-				async
+				strategy="lazyOnload"
 				src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287237463323384"
 			/>
 			<body>
