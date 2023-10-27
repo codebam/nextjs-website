@@ -25,7 +25,7 @@ const config: Config = {
 					colors: {
 						background: "#fff",
 						foreground: "#000",
-						primary: "#2a9d8f",
+						primary: "#1B6052",
 						secondary: "#264653",
 					},
 				},
@@ -33,8 +33,8 @@ const config: Config = {
 					colors: {
 						background: "#000",
 						foreground: "#fff",
-						primary: "#2a9d8f",
-						secondary: "#264653",
+						primary: "#2DA99B",
+						secondary: "#639DB6",
 					},
 				},
 			},
