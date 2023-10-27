@@ -28,7 +28,7 @@ export default function RootLayout({
 				<Providers>
 					<HeaderBar />
 					{children}
-					<footer>
+					<footer className="text-primary">
 						<Link href="https://github.com/codebam">source code</Link>
 					</footer>
 				</Providers>

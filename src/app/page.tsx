@@ -42,7 +42,9 @@ export default async function Home() {
 			<ul>
 				{data.posts.map((post) => (
 					<li key={post?.id}>
-						<Link href={"/posts/" + post?.id}>{post?.title}</Link>
+						<Link className={"text-primary"} href={"/posts/" + post?.id}>
+							{post?.title}
+						</Link>
 						<p className={"text-secondary text-right"}>
 							{/* @ts-ignore */}
 							{post.date.toDateString()}
