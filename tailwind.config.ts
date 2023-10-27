@@ -24,7 +24,7 @@ const config: Config = {
 				light: {
 					colors: {
 						background: "#fff",
-						foreground: "#000",
+						foreground: "#14213D",
 						primary: "#14213D",
 						secondary: "#FCA311",
 					},
